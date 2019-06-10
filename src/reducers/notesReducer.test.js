@@ -1,5 +1,5 @@
 import notesReducer from './notesReducer';
-import { newNote, NEW_NOTE, NEW_NOTE_PENDING, NEW_NOTE_FULFILLED, NEW_NOTE_ERROR } from '../actions/notesActions';
+import {  NEW_NOTE, NEW_NOTE_PENDING } from '../actions/notesActions';
 
 describe('notes reducer', () => {
   it('handles the NEW_NOTES_PENDING_ACTION', () => {
