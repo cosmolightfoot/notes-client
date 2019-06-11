@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Notes({ notes }) {
+function Notes({ notes, pending }) {
   const notesList = notes.map((note, i) => {
     return (
       <li key={i}>
@@ -19,7 +19,8 @@ function Notes({ notes }) {
 }
 
 Notes.propTypes = {
-  notes: PropTypes.array.isRequired
+  notes: PropTypes.array.isRequired,
+  pending: PropTypes.bool.isRequired
 };
 
 export default Notes;

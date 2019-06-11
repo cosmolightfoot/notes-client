@@ -1,4 +1,4 @@
-import { NEW_NOTE, NEW_NOTE_FULFILLED, NEW_NOTE_PENDING, NEW_NOTE_ERROR } from '../actions/notesActions';
+import { NEW_NOTE, NEW_NOTE_FULFILLED, NEW_NOTE_PENDING, NEW_NOTE_ERROR, FETCH_NOTES, FETCH_NOTES_PENDING } from '../actions/notesActions';
 
 const initialState = {
   pending: false,
@@ -19,6 +19,12 @@ export default function notesReducer(state = initialState, action) {
 
     case NEW_NOTE_ERROR: 
       return { ...state, pending: false, error: action.payload };
+
+    case FETCH_NOTES: 
+      return { ...state, pending: false, notes: action.payload };
+
+    case FETCH_NOTES_PENDING: 
+      return { ...state, pending: true };
       
     default:
       return state;
