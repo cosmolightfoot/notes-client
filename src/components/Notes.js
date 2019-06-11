@@ -12,6 +12,8 @@ function Notes({ notes, pending }) {
     );
   });
 
+  if(pending) return <h1>Loading...</h1>;
+
   return (
     <ul>
       {notesList}
