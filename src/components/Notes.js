@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Notes({ notes, pending }) {
+  console.log(notes, 'NOTES');
   const notesList = notes.map((note, i) => {
     return (
       <li key={i}>
-        <dt>{notes.title}</dt>
-        <dd>{notes.body}</dd>
+        <h3>{note.title}</h3>
+        <p>{note.body}</p>
       </li>
     );
   });
