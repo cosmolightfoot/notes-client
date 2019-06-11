@@ -20,7 +20,7 @@ module.exports = {
     new DotEnv({ systemvars: true }),
     new CopyPlugin([
       { from: 'public' },
-    ]),
+    ])
   ],
   module: {
     rules: [
