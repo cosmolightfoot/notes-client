@@ -13,7 +13,7 @@ class Callback extends PureComponent {
   }
 
   render() {
-    return <h1></h1>;
+    return <h1>This is a Callback</h1>;
   }
 }
 
@@ -28,5 +28,6 @@ const mapDispatchToProps = (dispatch, props) => ({
 });
 
 export default connect(
+  null,
   mapDispatchToProps
 )(Callback);

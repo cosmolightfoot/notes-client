@@ -14,7 +14,6 @@ export const withSession = Component => {
       if(!this.props.token) {
         login();
       }
-
     }
 
     render() {
@@ -22,7 +21,7 @@ export const withSession = Component => {
       return <Component />;
     }
   }
-
+  
   const mapStateToProps = state => ({
     token: getToken(state)
   });
