@@ -22,7 +22,7 @@ module.exports = {
       { from: 'public' },
     ])
   ],
-  module: {
+  module: { 
     rules: [
       {
         test: /\.js$/,
